@@ -1,0 +1,172 @@
+			<!DOCTYPE html>
+			<html>
+			<head>
+			<title>Cristiano Isaias - Meu website</title>
+			<meta charset="utf-8">
+			<meta name="description"content="Este é um site criado para atingirem pessoas que desejam ter soluções de TI.">
+			<meta name="viewport" content="width-device-width,initial-scarle=1.0"/>
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link type="text/css" rel="stylesheet" href="css/materialize.css"/>
+			<link type="text/css" rel="stylesheet" href="css/estilo.css"/>
+			<link rel="stylesheet" type="text/css" href="socialsider-v1.2/_css/socialsider-v1.2.css" media="all" />
+
+			</head>
+					<body>	
+
+						<div class="socialsider socialsider_right_top socialsider_fixed socialsider_bgcolor_white socialsider_radius socialsider_spacer "><ul><li><a data-socialsider="facebook" href="#" title="Facebook"></a></li><li><a data-socialsider="instagram" href="#" title="Instagram"></a></li><li><a data-socialsider="youtube" href="#" title="YouTube"></a></li></ul></div>
+
+
+						<div class="row">
+							<nav class="menuSuper">	
+							  <div class="container">			
+								<div class="nav-wrapper">
+					    		  <a href="#" class="brand-logo"><img responsive-img src="imagens/logo.jpg"></a>
+					    		  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					     		 <ul id="nav-mobile" class="right hide-on-med-and-down">
+					       		 <li><a href="index.html">Home</a></li>
+					        	<li><a href="sobremim.html">Sobre mim</a></li>
+					        	<li><a href="galeria.html">Portefólio</a></li>
+					        <li><a href="contato.html">Contato</a></li>
+					      </ul>
+					  </div>
+					    </div>
+					
+					  </nav>
+
+						<ul class="sidenav" id="mobile-demo">
+						<a href="#" class="brand-logo">CVV Tecnologia</a>	
+				        <li><a href="index.html">Home</a></li>
+				        <li><a href="sobremim.html">Sobre mim</a></li>
+				        <li><a href="galeria.html">Portefólio</a></li>
+				        <li><a href="contato.html">Contato</a></li>
+				      </ul>
+
+
+					</div>
+				</div>
+
+						<script type="text/javascript">
+							function ver_contato(formcontato){
+							if(formcontato.nome.value == ""){
+							alert("Campo NOME está em branco!");
+							formcontato.nome.focus();
+							return false;	
+
+								}
+
+							var formato = new RegExp(/^[A-Za-z0-9_\-\.]+@[A-Za-z0-9_\-\.]{2,}\.[A-Za-z0-9]{2,}(\.[A-Za-z0-9])?/);
+							if(!formato.test(formcontato.email.value)){
+							alert("O campo E-Mail está incorreto!");
+							formcontato.email.focus();
+							return false;	
+								}
+
+							if (formcontato.telefone.value.length < 11) {
+								alert("O campo Telefone e inválido!");
+								formcontato.telefone.focus();
+								return false;
+							}
+
+							if (formcontato.mensagem.value == "") {
+								alert("O campo Mensagem está em branco!");
+								formcontato.mensagem.focus();
+								return false;
+							}
+
+							}
+
+							</script>
+
+
+			<form action="contato.php" method="post" name="formcontato">
+    		  <div class="container">
+    			<div class="row">
+    			  <h1 class="titulosinternos">Contato</h1>
+
+
+    			  <div class="col"s12 l3>&nbsp;</div>
+    			  <div class="col"s12 l6>
+    			 	<b><p><center>Preencha o formulario abaixo e em breve entraremos em contato.</center></p></b>
+    					<div class="row">
+    		    
+    		    <div class="input-field col s12">
+          	 	    <input placeholder="Nome" id="nome" name="nome" type="text" class="validate">
+          	    	<label for="Nome">Nome</label>
+                </div>
+
+                <div class="input-field col s12">
+          	 	    <input placeholder="Email" id="Email" name="email" type="text" class="validate">
+          	    	<label for="Email">Email</label>
+                </div>
+
+                <div class="input-field col s12">
+          	 	    <input placeholder="Telefone" id="Telefone" name="telefone" type="text" class="validate">
+          	    	<label for="Telefone">Telefone</label>
+                </div>
+
+                <div class="input-field col s12">
+          			<textarea id="mensagem" name="mensagem" class="materialize-textarea"></textarea>
+          			<label for="mensagem">Mensagem</label>
+        		</div>
+			
+					<center>
+					<button class="waves-effect waves-light btn-large btenviar mgbot15" type="submit" onclick="return ver_contato(formcontato);">Enviar<i class="material-icons right">send</i></button>
+				</center>
+        		</div>
+    		</div>
+    	</div>
+      </div>
+    </div>	
+    		</form>
+
+    		<br/>
+			<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Meu Super Rodapé.</h5>
+                <p class="grey-text text-lighten-4">Se você curtiu deixa um like.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="sobremim.html">Sobre mim </a></li>
+                  <li><a class="grey-text text-lighten-3" href="galeria.html">Portfólio</a></li>
+                  <li><a class="grey-text text-lighten-3" href="contato.html">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright" style="width: 980px">
+            <div class="container">
+            © 2019 Copyright - Cristiano Isaías da Silva = Todos os direitos Reservados
+            
+            </div>
+          </div>
+        </footer>
+
+</body>
+</html>
+
+<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript"src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script>
+					$(document).ready(function(){
+				    $('.carousel').carousel();
+				  });
+
+					 $('.carousel.carousel-slider').carousel({
+				    fullWidth: true
+				  });
+				      
+					</script>
+	
+					<script type="text/javascript">
+						
+						 $(document).ready(function(){
+    				$('.sidenav').sidenav();
+  					});
+
+					</script>	
